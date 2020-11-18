@@ -10,7 +10,7 @@ library(reshape2)
 library(tm)
 library(ggplot2)
 
-######################## EN CASO DE HACER SCRAPP EN ESPA—OL(ES) EJECUTAR ESTE CODIGO ########################
+######################## EN CASO DE HACER SCRAPP EN ESPA√ëOL(ES) EJECUTAR ESTE CODIGO ########################
                         ##############                            ##############
                                      # EN SENTIDO CONTRARIO SKIP #
 
@@ -28,11 +28,11 @@ afinn
 
 #ABRIENDO API CREADA
 
-api_key <- "lfp1A7rxGuuyjcarN4hpv1Qwc"
-api_secret_key <- "GcXd7VBhxDEUYzQd0PgW2kpaFAoMI2feeJjfEievYQT2w86ESi"
-access_token <- "1313150890170363904-rB1fBrrGKEUasfWXIXi45HvrPJ6Fso"
-access_token_secret <- "AVaZogkul5McHPbLzJUlb9bUa5OW6gejwmVT01kzkPIvV"
-app_name <- "ChilePlebi"
+api_key <- "XXXXXXXXX"
+api_secret_key <- "XXXXXXXXX"
+access_token <- "XXXXXXXXX"
+access_token_secret <- "XXXXXXXXX"
+app_name <- "XXXXXXXXX"
 
 #Guardar token
 
@@ -51,7 +51,7 @@ tweets <- search_tweets(q="#digitaleconomy",  #### SOLO SE CAMBIA ESTA VARIABLE 
 dim(tweets)
 names(tweets)
 
-#EXTRACCI”N DATA
+#EXTRACCI√ìN DATA
 
 tweets_token <- unnest_tokens(tbl= tweets,
                               output = "word",
@@ -75,7 +75,7 @@ count(tweets_token,
       word,
       sort = TRUE)
 
-#VISUALIZACI”N INFORMACI”N ENCONTRADA
+#VISUALIZACI√ìN INFORMACI√ìN ENCONTRADA
 
 tweets_token %>%
   count(word, sort = TRUE) %>%
@@ -165,7 +165,7 @@ tweets_nrc %>%
 
 
 
-######    VISUALIZACI”N GR¡FICOS    ######
+######    VISUALIZACI√ìN GR√ÅFICOS    ######
 
 
 # Palabras positivas por bing
